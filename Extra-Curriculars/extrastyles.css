@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 700;
+    font-size: 1rem;
+    color: white;
+  }
+  body{
+    background: url(./assets/images/culturals.jpg)  no-repeat center fixed;
+    background-size: cover;
+  }
+  .main{
+    padding: 2.5rem 0.6rem;
+    width  :100vw;
+    height: 100vh;
+}
+  ul{
+    list-style-type: none;
+  }
+  li:before{
+        content:"\270C";
+        color: white;
+        padding-right: 0.5rem;
+        justify-content: baseline;
+  }

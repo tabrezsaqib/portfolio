@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="newaboutstyles.css">
+    <link
+    href="https://fonts.googleapis.com/css2?family=Island+Moments&family=Kolker+Brush&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@1,600&family=Xanh+Mono&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    *{
+      font-family: "Merriweather";
+    }
+  </style>
+</head>
+<body>
+    <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'highlights')">Highlights of Professional Experience</button>
+        <button class="tablinks" onclick="openTab(event, 'edu')">Education</button>
+        <button class="tablinks" onclick="openTab(event, 'train')">Training, Certifications & Licenses</button>
+        <button class="tablinks" onclick="openTab(event, 'prof')">Professional Awards</button>
+      </div>
+      <div id="highlights" class="tabcontent">
+        <h3>Highlights of Professional Experience</h3>
+            <ul>
+                <li>Provided solutions to various problems presented by being proactive, thinking, and applying them in the latest compatible technology for automation.</li>
+                <li>Established good rapport and professionalism with the teams I worked with and strived toward success with zero escalation.</li> 
+                <li>Completed every task with high quality and efficiency with excellent time management skills.</li> 
+            </ul> 
+        <!-- <button class="tablinks" onclick="openTab(event, 'Highlights of Professional Experience')" id="defaultOpen">'Highlights of Professional Experience'</button> -->
+      </div>
+      <div id="edu" class="tabcontent">
+        <h3>Education</h3>
+            <table>
+                <tr>
+                    <th>Degree</th>
+                    <th>School</th>
+                    <th>Period</th>
+                    <th>CGPA</th>
+                </tr>
+                <tr>
+                    <td>Master of Engineering in Electrical and Computer Engineering</td>
+                    <td>University of New Brunswick</td>
+                    <td>Sep, 2021 - Dec, 2022</td>
+                    <td>3.9</td>
+                </tr>
+                <tr>
+                    <td>Bachelor of Engineering in Electronics and Communication Engineering</td>
+                    <td>Anna University</td>
+                    <td>Aug, 2014 - April, 2018</td>
+                    <td>8.10</td>
+                </tr>
+            </table>
+      </div>
+      <div id="train" class="tabcontent"> `
+        <h3>Training, Certifications & Licenses</h3>
+        <h3>Training</h3>
+            <dl>
+                <dt></dt>
+                <dd></dd>
+            </dl>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quis dolorum cupiditate pariatur culpa nostrum dolor itaque nobis voluptatem adipisci? Maiores nemo tempore, beatae distinctio temporibus vitae laborum harum fugiat.</p>
+            <h3>Certifications & Licenses</h3>
+            <dl>
+              <dt> Microsoft Azure Fundamentals<span>Dec, 2020</span></dt>
+              <dd>Cloud Azure fundamentals and architecture.</dd>
+              <dt>EPIC Cadence/Prelude Fundamentals	<span>Aug, 2020</span></dt>
+              <dd>Fundamentals in Cadence and Prelude for hospital scheduling and billing.</dd>
+              <dt>EPIC Cadence Administration<span>Aug, 2020</span></dt>
+              <dd>Patient and provider administration for hospitals. </dd>
+            </dl>  		                                      
+      </div>
+      <div id="prof" class="tabcontent">
+        <!-- <h3>Professional Awards</h3> -->
+          <div class="award">
+            <img src="./assets/images/awards.jpg" alt="" width="80%" height="80%" id="award">
+          </div>
+          <div class="desc">
+          <dl class="def">
+            <dt class="dfterm">Ace Award</dt>
+            <dd class="dfdesc">For building trust, gaining recognition and appreciation with the clients.</dd>
+          </dl>
+          <dl class="def">
+            <dt class="dfterm">Pinnacle Award</dt>
+            <dd class="dfdesc">For being the torchbearer of continuous innovation and agility at scale. </dd>
+          </dl>
+          </div>
+      </div>
+      <script>
+      function openTab(evt, tabName) {
+        // Declare all variables
+        var i, tabcontent, tablinks;
+      
+        // Get all elements with class="tabcontent" and hide them
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+      
+        // Get all elements with class="tablinks" and remove the class "active"
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+      
+        // Show the current tab, and add an "active" class to the button that opened the tab
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+      document.getElementById("defaultOpen").click();
+    </script>
+</body>
+</html>

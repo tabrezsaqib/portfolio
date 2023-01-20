@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+  }
+  .main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+.e-portfolio{
+  background: blanchedalmond  url(./assets/images/portbg.jpg) fixed no-repeat 33.33% 33.33%;
+    background-clip: content-box;
+    background-size: cover;
+    background-origin: border-box;
+    align-items: center;
+}
+.e-commerce{
+  background: blanchedalmond  url(./assets/images/gymbg.jpg) fixed no-repeat 33.33% 33.33%;
+    background-clip: content-box;
+    background-size: cover;
+    background-origin: border-box;
+    align-items: center;
+}
+.to-do{
+  background: blanchedalmond  url(./assets/images/todobg.jpg) fixed no-repeat 33.33% 33.33%;
+    background-clip: content-box;
+    background-size: cover;
+    background-origin: border-box;
+    align-items: center;
+}
+h4{
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+#port {
+    margin-top: 20px;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    float: left;
+    shape-outside: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    shape-margin: 10px;
+  }
+  #gym {
+    margin-top: 20px;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+    float: left;
+    shape-outside: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+    shape-margin: 10px;
+  }
+  #todo{
+    margin-top: 20px;
+    clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+    float: left;
+    shape-outside: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+    shape-margin: 10px;
+  }

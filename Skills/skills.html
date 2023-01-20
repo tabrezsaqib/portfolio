@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills</title>
+    <link rel="stylesheet" href="skillsstyle.css">
+    <link
+    href="https://fonts.googleapis.com/css2?family=Island+Moments&family=Kolker+Brush&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@1,600&family=Xanh+Mono&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    *{
+      font-family: "Merriweather";
+    }
+  </style>
+</head>
+<body>
+    <div class="main">
+        <div class="sidebar">
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>Javascript ES6</li>
+                <li>AJAX</li>
+                <li>JSON</li>
+                <li>React JS</li>
+                <li>Redux</li>
+                <li>Git</li>
+                <li>Python</li>
+            </ul>
+        </div>
+        <div class="right">
+            <img src="./assets/icons/list.svg" id="hamburger" />
+            <img src="./assets/icons/x-circle-fill.svg" id="cross" />
+            <div class="txt"></div>
+          </div>
+    </div>
+    <script>
+        document.getElementById("cross").addEventListener("click", myFunc);
+
+function myFunc() {
+  if (
+    document.getElementById("cross").src ===
+    "http://127.0.0.1:5500/x-circle-fill.svg"
+  ) {
+    document.getElementById("cross").src =
+      "http://127.0.0.1:5500/list.svg";
+
+    document.querySelector(".sidebar").style.left = "-200px";
+  } else {
+    document.getElementById("cross").src =
+      "http://127.0.0.1:5500//x-circle-fill.svg";
+    document.querySelector(".sidebar").style.left = "0";
+  }
+}
+  
+      </script>
+</body>
+</html>

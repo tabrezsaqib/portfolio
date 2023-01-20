@@ -1,0 +1,129 @@
+*{
+margin: 0;
+background-color: rgb(1, 1, 31);
+}
+section{
+    width: 100%;
+    display: flex;
+justify-content: space-between;
+flex-direction: row;
+padding: 1rem;
+}
+nav{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+nav a{
+    text-decoration: none;
+}
+nav a{
+    color: white !important;
+    font-weight: 700px;
+}
+a:visited{
+    color: black;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+  }
+.hello p{
+    background-color: rgb(139, 224, 139);
+    display: flex;
+    width: 15%;
+    border-radius: 50%;
+    justify-content: center;
+}
+.name p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+  }
+
+.contact p{
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.photo{
+    display: flex;
+    width: 300px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: black;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.content{
+    position: relative;
+}
+.intro{
+    padding: 10rem 1rem;
+    width: 50%;
+    position: absolute;
+    left: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.circle{
+    padding-top: 17rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    /* padding: 17rem 1rem; */
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.CV{
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom:0%;
+}
+#btn{
+        background-color: rgb(145, 234, 145);
+        border-radius:2.5rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+}
+.name{
+    padding: 0.6rem 0;
+}
+#names{
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+#position{
+    padding: 0.6rem 0;
+    font-weight: 700;
+    font-size: 1rem;
+}
+.photo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+#profile{
+    border-radius: 50%;
+}
+#pin{
+    padding: 0 0.4rem;
+}
+#mail,#phone,#address{
+    padding: 0.6rem 0;
+}
