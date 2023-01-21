@@ -29,10 +29,14 @@
     background-color: rgba(119, 149, 239, 0.5);
   }
   .tabcontent {
+    width: 100vw;
+    height: 100vh;
     display: none;
     padding: 6px 12px;
     border: 1px solid #ccc;
     border-top: none;
+    justify-content: center;
+    align-items: center;
   }
   .tabcontent {
     animation: fadeEffect 1s;
@@ -90,26 +94,69 @@
     padding: 0 0.6rem;
     padding-bottom: 1rem;
   }
-  .edu{
-    width:80%;
-    height:30vh;
+  #edu{
+    width:100%;
+    height:100%;
     display: flex;
   flex-direction: row;
   position: absolute;
-  top: 80%;
-  background-color: rgba(112, 109, 109, 0.5);
-  box-shadow: 20px 20px 50px #bebebe, -20px -20px 50px #ffffff;
   border-radius: 2.5rem;
+  justify-content: center;
+  align-items: center;
   }
   table{
       border: 2;
       margin: 2.5em;
       border-radius: 2.5rem;
+      padding: 0.6rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding-right: 2rem;
+      padding-top: 6rem;
   }
   tr:nth-child(2n){
   
-      background-color: rgb(2, 41, 132);
+      background-color: rgba(4, 67, 109, 0.377);
   }
   tr:nth-child(2n-1){
-    background-color: rgb(2, 41, 132);
+    background-color: rgba(2, 41, 132, 0.9);
+  }
+  h3{
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.6rem;
+    padding: 0.6rem;
+  }
+  th, td{
+    padding: 0.6rem;
+    text-align: center;
+  }
+  #high{
+    margin-top: 20px;
+    clip-path: circle(50% at 50% 50%);
+    float: left;
+    shape-outside: circle(50% at 50% 50%);
+    shape-margin: 10px;
+  }
+  #highlights{
+    width:100%;
+    height:100%;
+    display: flex;
+  flex-direction: row;
+  position: absolute;
+  border-radius: 2.5rem;
+  justify-content: center;
+  align-items: center;
+  }
+
+  .points{
+    padding-top: 4.5rem;
+  }
+  ul li{
+    list-style-type: none;
+    padding: 0.6rem 0;
+    font-weight: 700;
+    font-size: 1.2rem;
   }

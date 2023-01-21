@@ -7,11 +7,35 @@
     color: white;
   }
   body{
-    background: url(./assets/images/culturals.jpg)  no-repeat center fixed;
-    background-size: cover;
+    overflow: scroll;
+  }
+  .roles{
+    width: 100%;
+  height: 50%;
+    background: blanchedalmond  url(./assets/images/culturals.jpg) fixed no-repeat 50% 50%;
+      background-clip: content-box;
+      background-size: cover;
+      background-origin: border-box;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+  }
+  .res{
+    padding-bottom: 2rem;
+
+  }
+  .achieve{
+    width: 100%;
+  height: 50%;
+      background: blanchedalmond  url(./assets/images/achievements.jpg) fixed no-repeat 50% 50%;
+        background-clip: content-box;
+        background-size: cover;
+        background-origin: border-box;
+        align-items: center;
+        position: relative;
   }
   .main{
-    padding: 2.5rem 0.6rem;
     width  :100vw;
     height: 100vh;
 }
@@ -23,4 +47,39 @@
         color: white;
         padding-right: 0.5rem;
         justify-content: baseline;
+  }
+  h3{
+    text-align: center;
+    padding: 0.6rem;
+    font-weight: 700;
+    font-size: 2rem;
+  }
+  h4{
+    text-align: center;
+    padding: 0.6rem;
+    font-weight: 500;
+    font-size: 1.4rem;
+  }
+  .acad{
+width: 50%;
+position: absolute;
+left: 0%;
+float: left;
+  }
+  .extra{
+width: 50%;
+right: 0%;
+position: absolute;
+float: right;
+  }
+  .dterm{
+    padding-bottom: 0.2rem;
+    font-weight: 500;
+    font-size: 1.2rem;
+  }
+  .dlast{
+    padding-bottom: 0.6rem;
+  }
+  ul li{
+    text-align: left;
   }
