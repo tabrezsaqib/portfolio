@@ -32,9 +32,7 @@
             </ul>
         </div>
         <div class="right">
-            <img src="./assets/icons/list.svg" id="hamburger" />
-            <img src="./assets/icons/x-circle-fill.svg" id="cross" />
-            <div class="txt"></div>
+            <img src="cross.svg" id="cross" />
           </div>
     </div>
     <script>
@@ -43,15 +41,15 @@
 function myFunc() {
   if (
     document.getElementById("cross").src ===
-    "http://127.0.0.1:5500/x-circle-fill.svg"
+    "http://127.0.0.1:5500/Skills/cross.svg"
   ) {
     document.getElementById("cross").src =
-      "http://127.0.0.1:5500/list.svg";
+      "http://127.0.0.1:5500/Skills/hamburger.svg";
 
     document.querySelector(".sidebar").style.left = "-200px";
   } else {
     document.getElementById("cross").src =
-      "http://127.0.0.1:5500//x-circle-fill.svg";
+      "http://127.0.0.1:5500/Skills/cross.svg";
     document.querySelector(".sidebar").style.left = "0";
   }
 }

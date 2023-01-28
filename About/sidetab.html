@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="sidetab.css">
+    <link
+    href="https://fonts.googleapis.com/css2?family=Island+Moments&family=Kolker+Brush&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@1,600&family=Xanh+Mono&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    *{
+      font-family: "Merriweather";
+    }
+  </style>
+</head>
+<body>
+    <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'HTML5')">HTML5</button>
+        <button class="tablinks" onclick="openTab(event, 'CSS3')">CSS3</button>
+        <button class="tablinks" onclick="openTab(event, 'Javascript')">Javascript ES6</button>
+        <button class="tablinks" onclick="openTab(event, 'AJAX')">AJAX</button>
+        <button class="tablinks" onclick="openTab(event, 'JSON')">JSON</button>
+        <button class="tablinks" onclick="openTab(event, 'Postman')">Postman</button>
+        <button class="tablinks" onclick="openTab(event, 'React')">React JS</button>
+        <button class="tablinks" onclick="openTab(event, 'Redux')">Redux</button>
+        <button class="tablinks" onclick="openTab(event, 'Git')">Git</button>
+      </div>
+      <div id="HTML5" class="tabcontent active" data-tab-info> 
+        <h3>HTML5</h3>
+      </div>
+      <div id="CSS3" class="tabcontent" data-tab-info>
+        <h3>CSS3</h3>
+      </div>
+      <div id="Javascript" class="tabcontent" data-tab-info> `
+        <h3>Javascript ES6</h3>	                                      
+      </div>
+      <div id="AJAX" class="tabcontent" data-tab-info>
+        <h3>AJAX</h3>	     
+      </div>
+      <div id="JSON" class="tabcontent" data-tab-info>
+        <h3>JSON</h3>
+      </div>
+      <div id="Postman" class="tabcontent" data-tab-info>
+        <h3>Postman</h3>
+      </div>
+      <div id="React" class="tabcontent" data-tab-info>
+        <h3>React JS</h3>
+      </div>
+      <div id="Redux" class="tabcontent" data-tab-info>
+        <h3>Redux</h3>
+      </div>
+      <div id="Git" class="tabcontent" data-tab-info>
+        <h3>Git</h3>
+      </div>
+      <script>
+      function openTab(evt, tabName) {
+        var i, tabcontent, tablinks;
+      
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+      
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+      
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+      document.getElementById("defaultOpen").click();
+    </script>
+</body>
+</html>

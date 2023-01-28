@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<style>
+		*{
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white !important;
+    box-sizing: border-box;
+    }
+		body {
+			background: url(./About/assets/images/keyboard.jpg)  no-repeat center fixed;
+            background-size: cover;
+		}
+		
+		[data-tab-info] {
+			display: none;
+		}
+		
+		.active[data-tab-info] {
+			display: block;
+		}
+		
+		.tab-content {
+			width: 100vw;
+			height: 100vh;
+			padding: 6px 12px;
+			justify-content: center;
+			align-items: center;
+		}
+		.tab-content {
+    animation: fadeEffect 1s;
+  }
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+		
+		.tabs {
+			font-size: 40px;
+			color: rgb(255, 255, 255);
+			display: flex;
+			margin: 0;
+			background-color: rgba(25, 70, 215, 0.5);
+		}
+		
+		.tabs span {
+			background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+		}
+		
+		.tabs span:hover {
+			background-color: rgba(23, 24, 24, 0.5);
+		}
+		table{
+      border: 2;
+      margin: 2.5em;
+      border-radius: 2.5rem;
+      padding: 0.6rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding-right: 2rem;
+      padding-top: 6rem;
+  }
+  tr:nth-child(2n){
+  
+      background-color: rgba(4, 67, 109, 0.377);
+  }
+  tr:nth-child(2n-1){
+    background-color: rgba(2, 41, 132, 0.9);
+  }
+  h3{
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.6rem;
+    padding: 0.6rem;
+  }
+  th, td{
+    padding: 0.6rem;
+    text-align: center;
+  }
+  ul li{
+    list-style-type: none;
+    padding: 0.6rem 0;
+    font-weight: 700;
+    font-size: 1.2rem;
+  }
+  #high{
+    margin-top: 20px;
+    clip-path: circle(50% at 50% 50%);
+    float: left;
+    shape-outside: circle(50% at 50% 50%);
+    shape-margin: 10px;
+  }
+  #tab_1{
+    width:100%;
+    height:100%;
+  }
+  .points{
+    padding-top: 4.5rem;
+  }
+	</style>
+</head>
+
+<body>
+	<div class="tabs">
+		<span data-tab-value="#tab_1">Highlights</span>
+		<span data-tab-value="#tab_2">Education</span>
+		<span data-tab-value="#tab_3">Training</span>
+		<span data-tab-value="#tab_4">Professional Awards</span>
+	</div>
+
+	<div class="tab-content">
+		<div class="tabs__tab active" id="tab_1" data-tab-info>
+			<h3>Highlights of Professional Experience</h3>
+			<img src="./About/assets/images/highlights.jpg" width="30%" height="50%" id="high" />
+			<ul class="points">
+				<li>Provided solutions to various problems presented by being proactive, thinking, and applying them in the latest compatible technology for automation.</li>
+				<li>Established good rapport and professionalism with the teams I worked with and strived toward success with zero escalation.</li> 
+				<li>Completed every task with high quality and efficiency with excellent time management skills.</li> 
+			</ul>
+		</div>
+		<div class="tabs__tab" id="tab_2" data-tab-info>
+			<h3>Education</h3>
+            <table>
+                <tr>
+                    <th>Degree</th>
+                    <th>School</th>
+                    <th>Period</th>
+                    <th>CGPA</th>
+                </tr>
+                <tr>
+                    <td>Master of Engineering in Electrical and Computer Engineering</td>
+                    <td>University of New Brunswick</td>
+                    <td>Sep, 2021 - Dec, 2022</td>
+                    <td>3.9</td>
+                </tr>
+                <tr>
+                    <td>Bachelor of Engineering in Electronics and Communication Engineering</td>
+                    <td>Anna University</td>
+                    <td>Aug, 2014 - April, 2018</td>
+                    <td>8.10</td>
+                </tr>
+            </table>
+
+		</div>
+		<div class="tabs__tab" id="tab_3" data-tab-info>
+			<h3>Training</h3>
+            <dl>
+                <dt></dt>
+                <dd></dd>
+            </dl>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quis dolorum cupiditate pariatur culpa nostrum dolor itaque nobis voluptatem adipisci? Maiores nemo tempore, beatae distinctio temporibus vitae laborum harum fugiat.</p>
+            <h3>Certifications & Licenses</h3>
+            <dl>
+              <dt> Microsoft Azure Fundamentals<span>Dec, 2020</span></dt>
+              <dd>Cloud Azure fundamentals and architecture.</dd>
+              <dt>EPIC Cadence/Prelude Fundamentals	<span>Aug, 2020</span></dt>
+              <dd>Fundamentals in Cadence and Prelude for hospital scheduling and billing.</dd>
+              <dt>EPIC Cadence Administration<span>Aug, 2020</span></dt>
+              <dd>Patient and provider administration for hospitals. </dd>
+            </dl>  	
+		</div>
+		<div class="tabs__tab" id="tab_4" data-tab-info>
+			<div class="desc">
+				<dl class="def">
+					<dt class="dfterm">Ace Award</dt>
+					<dd class="dfdesc">For building trust, gaining recognition and appreciation with the clients.</dd>
+				</dl>
+				<dl class="def">
+					<dt class="dfterm">Pinnacle Award</dt>
+					<dd class="dfdesc">For being the torchbearer of continuous innovation and agility at scale. </dd>
+				</dl>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		const tabs = document.querySelectorAll('[data-tab-value]')
+		const tabInfos = document.querySelectorAll('[data-tab-info]')
+
+		tabs.forEach(tab => {
+			tab.addEventListener('click', () => {
+				const target = document
+					.querySelector(tab.dataset.tabValue);
+
+				tabInfos.forEach(tabInfo => {
+					tabInfo.classList.remove('active')
+				})
+				target.classList.add('active');
+			})
+		})
+	</script>
+</body>
+
+</html>

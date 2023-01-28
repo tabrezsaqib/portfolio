@@ -44,6 +44,15 @@ a:visited{
     color: white;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+.block{
+    width: 50%;
+    position: relative;
+    left: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .photo{
     display: flex;
     width: 300px;
@@ -66,38 +75,16 @@ a:visited{
     justify-content: center;
 }
 .circle{
-    padding-top: 17rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    /* padding: 17rem 1rem; */
-    width: 50%;
     position: absolute;
-    left: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+    top:80%;
 }
 .CV{
-    width: 50%;
     position: absolute;
-    left: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    bottom:0%;
+    bottom: 0%;
 }
 #btn{
         background-color: rgb(145, 234, 145);
         border-radius:2.5rem;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
 }
 .name{
     padding: 0.6rem 0;
