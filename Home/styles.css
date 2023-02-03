@@ -75,7 +75,7 @@ a:visited{
     justify-content: center;
 }
 .circle{
-    position: absolute;
+    /* position: absolute; */
     top:80%;
 }
 .CV{
@@ -103,7 +103,7 @@ a:visited{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    position: absolute;
+    /* position: absolute; */
 }
 #profile{
     border-radius: 50%;

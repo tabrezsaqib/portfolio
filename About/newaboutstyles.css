@@ -1,6 +1,5 @@
 *{
   margin: 0;
-  /* background-color: rgb(30, 30, 69); */
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color: white !important;
   box-sizing: border-box;
@@ -53,6 +52,7 @@
 #prof{
   width: 100vw;
   height: 100vh;
+  position: relative;
 }
 .award{
   width: 40%;
@@ -61,21 +61,26 @@
   flex-direction: column;
   justify-content: center;
   padding-bottom: 4rem;
+  position: absolute;
+  align-items: center;
 }
 .desc{
   width: 60%;
   height: 40%;
   display: flex;
+  right: 5%;
+  bottom:30%;
   flex-direction: column;
   justify-content: center;
-  background-color: navy;
+  background-color: rgba(25, 70, 215, 0.5);
   border-radius: 2rem;
   align-items: center;
+  position: absolute;
 }
 #award{
   min-height: 1.5em;
   padding: 0.6rem 0.6rem;
-  /* padding-bottom: 4rem; */
+  clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -90,6 +95,7 @@
 }
 .dfterm{
   padding: 0.6rem 0;
+  font-size: 1.2rem;
 }
 .dfdesc{
   padding: 0 0.6rem;
@@ -129,11 +135,11 @@ th, td{
   text-align: center;
 }
 #high{
-  margin-top: 20px;
+  margin-top: 5px;
   clip-path: circle(50% at 50% 50%);
   float: left;
   shape-outside: circle(50% at 50% 50%);
-  shape-margin: 10px;
+  shape-margin: 5px;
 }
 #highlights{
   width:100%;
@@ -142,10 +148,45 @@ th, td{
 
 .points{
   padding-top: 4.5rem;
+  background-color: rgba(23, 24, 24, 0.5);
+  padding-bottom: 4.5rem;
+  border-radius: 2.5rem;
 }
 ul li{
   list-style-type: none;
-  padding: 0.6rem 0;
+  padding: 2rem 0;
   font-weight: 700;
   font-size: 1.2rem;
+}
+#train{
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+.training{
+  background-color: rgba(23, 24, 24, 0.5);
+  border-radius: 2.5rem;
+  position: absolute;
+  top: 15%;
+  padding: 1rem 1rem;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.certificates{
+  background-color: rgba(23, 24, 24, 0.5);
+  border-radius: 2.5rem;
+  position: absolute;
+  bottom: 5%;
+  left: 26%;
+  padding: 1rem 1rem;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.period{
+  padding-left: 1.6rem;
+  text-align: right;
 }
