@@ -7,6 +7,7 @@
   body{
           background: url(././assets/images/skills.jpg)  no-repeat center fixed;
           background-size: cover;
+          display: flex;
   }
   [data-tab-info] {
     display: none;
@@ -58,17 +59,115 @@ h3{
   font-size: 1.6rem;
   padding: 0.6rem;
 }
-#HTML5{
+#HTML5, #CSS3, #Javascript, #AJAX, #JSON, #Postman, #React, #Redux, #Git{
   width: 70%;
   height: 100%;
-  position: relative;
 }
 .descContent{
-  top: 0%;
-  right: 0%;
-  position: absolute;
+  width: 80vw;
+  height:50vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background: url(./assets/images/html.jpg) no-repeat center fixed;
+  background-size: cover;
+  padding: 2rem;
+  border-radius: 2.5rem;
+}
+.CSScontent{
+  width: 80vw;
+  height:50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: url(./assets/images/css.jpg) no-repeat center fixed;
+  background-size: cover;
+  padding: 2rem;
+  border-radius: 2.5rem;
+}
+.Javacontent{
+  width: 80vw;
+  height:50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: url(./assets/images/javascript.jpg) no-repeat center fixed;
+  background-size: cover;
+  padding: 2rem;
+  border-radius: 2.5rem;
+}
+.AJAXcontent{
+  width: 80vw;
+  height:50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: url(./assets/images/AJAX.jpg) no-repeat center fixed;
+  background-size: cover;
+  padding: 2rem;
+  border-radius: 2.5rem;
+}
+.JSONcontent{
+  width: 80vw;
+  height:50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: url(./assets/images/JSON.jpg) no-repeat center fixed;
+  background-size: cover;
+  padding: 2rem;
+  border-radius: 2.5rem;
+}
+.Postcontent{
+  width: 80vw;
+  height:50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: url(./assets/images/Postman.jpg) no-repeat center fixed;
+  background-size: cover;
+  padding: 2rem;
+  border-radius: 2.5rem;
+}
+.Reactcontent{
+  width: 80vw;
+  height:50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: url(./assets/images/react.jpg) no-repeat center fixed;
+  background-size: cover;
+  padding: 2rem;
+  border-radius: 2.5rem;
+}
+.Reduxcontent{
+  width: 80vw;
+  height:50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: url(./assets/images/Redux.jpg) no-repeat center fixed;
+  background-size: cover;
+  padding: 2rem;
+  border-radius: 2.5rem;
+}
+.Gitcontent{
+  width: 80vw;
+  height:50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: url(./assets/images/git.jpg) no-repeat center fixed;
+  background-size: cover;
+  padding: 2rem;
+  border-radius: 2.5rem;
 }

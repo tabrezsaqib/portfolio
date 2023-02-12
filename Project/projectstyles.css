@@ -11,21 +11,28 @@
     flex-direction: column;
   }
 .e-portfolio{
-  background: blanchedalmond  url(./assets/images/portbg.jpg) fixed no-repeat 33.33% 33.33%;
+  background: blanchedalmond  url(./assets/images/portbg.jpg) fixed no-repeat 22.22% 22.22%;
     background-clip: content-box;
     background-size: cover;
     background-origin: border-box;
     align-items: center;
 }
 .e-commerce{
-  background: blanchedalmond  url(./assets/images/gymbg.jpg) fixed no-repeat 33.33% 33.33%;
+  background: blanchedalmond  url(./assets/images/gymbg.jpg) fixed no-repeat 22.22%  22.22% ;
+    background-clip: content-box;
+    background-size: cover;
+    background-origin: border-box;
+    align-items: center;
+}
+.dict{
+  background: blanchedalmond  url(./assets/images/dictionarybg.jpg) fixed no-repeat 22.22%  22.22%;
     background-clip: content-box;
     background-size: cover;
     background-origin: border-box;
     align-items: center;
 }
 .to-do{
-  background: blanchedalmond  url(./assets/images/todobg.jpg) fixed no-repeat 33.33% 33.33%;
+  background: blanchedalmond  url(./assets/images/todobg.jpg) fixed no-repeat 22.22%  22.22%;
     background-clip: content-box;
     background-size: cover;
     background-origin: border-box;
@@ -41,6 +48,7 @@ h4{
     float: left;
     shape-outside: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
     shape-margin: 10px;
+    padding-left: 10px;
   }
   #gym {
     margin-top: 20px;
@@ -48,6 +56,7 @@ h4{
     float: left;
     shape-outside: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
     shape-margin: 10px;
+    padding-left: 10px;
   }
   #todo{
     margin-top: 20px;
@@ -55,4 +64,18 @@ h4{
     float: left;
     shape-outside: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
     shape-margin: 10px;
+    padding-left: 10px;
   }
+  #dictionary{
+    margin-top: 20px;
+    clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
+    float: left;
+    shape-outside: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);;
+    shape-margin: 10px;
+    padding-left: 10px;
+  }
+  ul li{
+    list-style-type: none;
+    padding-bottom: 10px;
+  }
+  
