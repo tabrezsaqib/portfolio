@@ -6,7 +6,7 @@
     box-sizing: border-box;
     }
     body{
-            background: url(./assets/images/bg.jpg)  no-repeat center fixed;
+            background:  rgb(1, 1, 31);  no-repeat center fixed;
             background-size: cover;
     }
     .main{
@@ -27,7 +27,7 @@ padding-bottom: 2rem;
 padding-right: 2rem;
 padding-top: 2rem;
 background-color: rgba(109, 109, 112, 0.5);
-    box-shadow: 20px 20px 50px #bebebe, -20px -20px 50px #ffffff;
+    box-shadow: 10px 10px 25px #bebebe, -10px -10px 25px #ffffff;
     border-radius: 2.5rem;
     }
     .application{
@@ -37,7 +37,7 @@ position: absolute;
 top: 100%;
 right: 5%;
 background-color: rgba(109, 109, 112, 0.5);
-    box-shadow: 20px 20px 50px #bebebe, -20px -20px 50px #ffffff;
+    box-shadow: 10px 10px 25px #bebebe, -10px -10px 25px #ffffff;;
     border-radius: 2.5rem;
 padding-bottom: 2rem;
 padding-right: 2rem;

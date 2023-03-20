@@ -7,7 +7,7 @@
     color: white;
   }
   body{
-    background: url(./assets/images/skills.jpg)  no-repeat center fixed;
+    background: rgb(1, 1, 31)  no-repeat center fixed;
     background-size: cover;
   }
   @media screen and (min-width: 300px) and (max-height: 1200px)

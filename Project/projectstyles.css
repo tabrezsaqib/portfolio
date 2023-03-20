@@ -5,39 +5,29 @@
   }
   .main {
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
-  }
-.e-portfolio{
-  background: blanchedalmond  url(./assets/images/portbg.jpg) fixed no-repeat 22.22% 22.22%;
+    background: rgb(1, 1, 31) fixed no-repeat;
     background-clip: content-box;
     background-size: cover;
     background-origin: border-box;
+  }
+.e-portfolio{
     align-items: center;
     color: white;
 }
 .e-commerce{
-  background: blanchedalmond  url(./assets/images/gymbg.jpg) fixed no-repeat 22.22%  22.22% ;
-    background-clip: content-box;
-    background-size: cover;
-    background-origin: border-box;
-    align-items: center;
+  align-items: center;
+  color: white;
 }
 .dict{
-  background: blanchedalmond  url(./assets/images/dictionarybg.jpg) fixed no-repeat 22.22%  22.22%;
-    background-clip: content-box;
-    background-size: cover;
-    background-origin: border-box;
-    align-items: center;
-    color: navy;
+  align-items: center;
+  color: white;
 }
 .to-do{
-  background: blanchedalmond  url(./assets/images/todobg.jpg) fixed no-repeat 22.22%  22.22%;
-    background-clip: content-box;
-    background-size: cover;
-    background-origin: border-box;
-    align-items: center;
+  align-items: center;
+  color: white;
 }
 h4{
   font-weight: 700;

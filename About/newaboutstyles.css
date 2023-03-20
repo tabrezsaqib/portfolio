@@ -5,8 +5,9 @@
   box-sizing: border-box;
   }
   body{
-          background: url(././assets/images/keyboard.jpg)  no-repeat center fixed;
+          background: rgb(1, 1, 31);  no-repeat center fixed;
           background-size: cover;
+          overflow: auto;
   }
   [data-tab-info] {
     display: none;
@@ -165,7 +166,7 @@ ul li{
   position: relative;
 }
 .training{
-  background-color: rgba(23, 24, 24, 0.5);
+  background-color: rgba(25, 70, 215, 0.5);;
   border-radius: 2.5rem;
   position: absolute;
   top: 15%;
@@ -178,7 +179,7 @@ ul li{
   height: 40%;
 }
 .certificates{
-  background-color: rgba(23, 24, 24, 0.5);
+  background-color: rgba(25, 70, 215, 0.5);
   border-radius: 2.5rem;
   position: absolute;
   bottom: 5%;

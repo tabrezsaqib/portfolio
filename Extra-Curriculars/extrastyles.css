@@ -10,14 +10,14 @@
     overflow: auto;
     width: 100vw;
     height: 150vh;
+    background: rgb(1, 1, 31) fixed no-repeat 50% 50%;
+      background-clip: content-box;
+      background-size: cover;
+      background-origin: border-box;
   }
   .roles{
     width: 100%;
     height: 50%;
-    background: blanchedalmond  url(./assets/images/culturals.jpg) fixed no-repeat 50% 50%;
-      background-clip: content-box;
-      background-size: cover;
-      background-origin: border-box;
       align-items: center;
       display: flex;
       flex-direction: column;
@@ -30,10 +30,6 @@
   .achieve{
     width: 100%;
   height: 50%;
-      background: blanchedalmond  url(./assets/images/achievements.jpg) fixed no-repeat 50% 50%;
-        background-clip: content-box;
-        background-size: cover;
-        background-origin: border-box;
         align-items: center;
         position: relative;
   }
