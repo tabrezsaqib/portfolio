@@ -8,6 +8,7 @@
           background: rgb(1, 1, 31)  no-repeat center fixed;
           background-size: cover;
           display: flex;
+          position: relative;
   }
   [data-tab-info] {
     display: none;
@@ -32,7 +33,7 @@ padding: 20px;
   transition: 0.3s;
 }
 .tab button:hover {
-  background-color: rgba(23, 24, 24, 0.5);
+  background-color: rgba(25, 70, 215, 0.5);
 }
 .tab button:active {
   background-color: rgba(119, 149, 239, 0.5);
@@ -74,6 +75,8 @@ h3{
   background-size: cover;
   padding: 2rem;
   border-radius: 2.5rem;
+  top: 25%;
+  position: absolute;
 }
 .CSScontent{
   width: 80vw;
@@ -86,6 +89,8 @@ h3{
   background-size: cover;
   padding: 2rem;
   border-radius: 2.5rem;
+  top: 25%;
+  position: absolute;
 }
 .Javacontent{
   width: 80vw;
@@ -98,6 +103,8 @@ h3{
   background-size: cover;
   padding: 2rem;
   border-radius: 2.5rem;
+  top: 25%;
+  position: absolute;
 }
 .AJAXcontent{
   width: 80vw;
@@ -110,6 +117,8 @@ h3{
   background-size: cover;
   padding: 2rem;
   border-radius: 2.5rem;
+  top: 25%;
+  position: absolute;
 }
 .JSONcontent{
   width: 80vw;
@@ -122,6 +131,8 @@ h3{
   background-size: cover;
   padding: 2rem;
   border-radius: 2.5rem;
+  top: 25%;
+  position: absolute;
 }
 .Postcontent{
   width: 80vw;
@@ -134,6 +145,8 @@ h3{
   background-size: cover;
   padding: 2rem;
   border-radius: 2.5rem;
+  top: 25%;
+  position: absolute;
 }
 .Reactcontent{
   width: 80vw;
@@ -146,6 +159,8 @@ h3{
   background-size: cover;
   padding: 2rem;
   border-radius: 2.5rem;
+  top: 25%;
+  position: absolute;
 }
 .Reduxcontent{
   width: 80vw;
@@ -158,6 +173,8 @@ h3{
   background-size: cover;
   padding: 2rem;
   border-radius: 2.5rem;
+  top: 25%;
+  position: absolute;
 }
 .Gitcontent{
   width: 80vw;
@@ -170,4 +187,244 @@ h3{
   background-size: cover;
   padding: 2rem;
   border-radius: 2.5rem;
+  top: 25%;
+  position: absolute;
+}
+@media only screen and (max-width: 500px) and (min-width: 300px) {
+  body{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow:auto;
+  }
+  .descContent, .CSScontent, .Javacontent, .AJAXcontent, 
+  .JSONcontent, .Postcontent, .Reactcontent,
+  .Reduxcontent, .Gitcontent{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 2%;
+  }
+}
+@media only screen and (max-width: 750px) and (min-width: 501px) {
+  body{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow:auto;
+  }
+  .tab{
+    width: 20%;
+  }
+  .descContent, .CSScontent, .Javacontent, .AJAXcontent, 
+  .JSONcontent, .Postcontent, .Reactcontent,
+  .Reduxcontent, .Gitcontent{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 2%;
+    width: 80%;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  *{
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white !important;
+    box-sizing: border-box;
+    }
+    body{
+            background: rgb(1, 1, 31)  no-repeat center fixed;
+            background-size: cover;
+            display: flex;
+            position: relative;
+    }
+    [data-tab-info] {
+      display: none;
+    }
+    
+    .active[data-tab-info] {
+      display: block;
+    }
+  .tab {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  padding: 20px;
+  }
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+  }
+  .tab button:hover {
+    background-color: rgba(25, 70, 215, 0.5);
+  }
+  .tab button:active {
+    background-color: rgba(119, 149, 239, 0.5);
+  }
+  .tabcontent {
+    float: right;
+    width: 70vw;
+    height: 100vh;
+    display: none;
+    padding: 6px 12px;
+    justify-content: center;
+    align-items: center;
+  }
+  .tabcontent {
+    animation: fadeEffect 1s;
+  }
+  @keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  h3{
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.6rem;
+    padding: 0.6rem;
+  }
+  #HTML5, #CSS3, #Javascript, #AJAX, #JSON, #Postman, #React, #Redux, #Git{
+    width: 70%;
+    height: 100%;
+  }
+  .descContent{
+    width: 80vw;
+    height:50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(25, 70, 215, 0.5) no-repeat center fixed;
+    background-size: cover;
+    padding: 2rem;
+    border-radius: 2.5rem;
+    top: 25%;
+    position: absolute;
+  }
+  .CSScontent{
+    width: 80vw;
+    height:50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(25, 70, 215, 0.5) no-repeat center fixed;
+    background-size: cover;
+    padding: 2rem;
+    border-radius: 2.5rem;
+    top: 25%;
+    position: absolute;
+  }
+  .Javacontent{
+    width: 80vw;
+    height:50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(25, 70, 215, 0.5) no-repeat center fixed;
+    background-size: cover;
+    padding: 2rem;
+    border-radius: 2.5rem;
+    top: 25%;
+    position: absolute;
+  }
+  .AJAXcontent{
+    width: 80vw;
+    height:50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(25, 70, 215, 0.5) no-repeat center fixed;
+    background-size: cover;
+    padding: 2rem;
+    border-radius: 2.5rem;
+    top: 25%;
+    position: absolute;
+  }
+  .JSONcontent{
+    width: 80vw;
+    height:50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(25, 70, 215, 0.5) no-repeat center fixed;
+    background-size: cover;
+    padding: 2rem;
+    border-radius: 2.5rem;
+    top: 25%;
+    position: absolute;
+  }
+  .Postcontent{
+    width: 80vw;
+    height:50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(25, 70, 215, 0.5) no-repeat center fixed;
+    background-size: cover;
+    padding: 2rem;
+    border-radius: 2.5rem;
+    top: 25%;
+    position: absolute;
+  }
+  .Reactcontent{
+    width: 80vw;
+    height:50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(25, 70, 215, 0.5) no-repeat center fixed;
+    background-size: cover;
+    padding: 2rem;
+    border-radius: 2.5rem;
+    top: 25%;
+    position: absolute;
+  }
+  .Reduxcontent{
+    width: 80vw;
+    height:50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(25, 70, 215, 0.5) no-repeat center fixed;
+    background-size: cover;
+    padding: 2rem;
+    border-radius: 2.5rem;
+    top: 25%;
+    position: absolute;
+  }
+  .Gitcontent{
+    width: 80vw;
+    height:50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(25, 70, 215, 0.5) no-repeat center fixed;
+    background-size: cover;
+    padding: 2rem;
+    border-radius: 2.5rem;
+    top: 25%;
+    position: absolute;
+  }
 }

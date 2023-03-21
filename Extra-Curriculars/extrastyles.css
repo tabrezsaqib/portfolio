@@ -9,7 +9,7 @@
   body{
     overflow: auto;
     width: 100vw;
-    height: 150vh;
+    height: 100vh;
     background: rgb(1, 1, 31) fixed no-repeat 50% 50%;
       background-clip: content-box;
       background-size: cover;
@@ -17,7 +17,7 @@
   }
   .roles{
     width: 100%;
-    height: 50%;
+    height: 35%;
       align-items: center;
       display: flex;
       flex-direction: column;
@@ -29,13 +29,13 @@
   }
   .achieve{
     width: 100%;
-  height: 50%;
+  height: 65%;
         align-items: center;
         position: relative;
   }
   .main{
     width  :100vw;
-    height: 150vh;
+    height: 100vh;
     overflow: auto;
 }
   ul{
@@ -81,4 +81,100 @@ float: right;
   }
   ul li{
     text-align: left;
+  }
+  @media only screen and (max-width: 500px) and (min-width: 300px) {
+    body{
+      overflow: auto;
+    }
+  }
+  @media only screen and (max-width: 750px) and (min-width: 501px) {
+    body{
+      overflow:auto;
+    }
+  }
+  @media only screen and (min-width: 1000px) {
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 700;
+      font-size: 1rem;
+      color: white;
+    }
+    body{
+      overflow: auto;
+      width: 100vw;
+      height: 100vh;
+      background: rgb(1, 1, 31) fixed no-repeat 50% 50%;
+        background-clip: content-box;
+        background-size: cover;
+        background-origin: border-box;
+    }
+    .roles{
+      width: 100%;
+      height: 35%;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .res{
+      padding-bottom: 2rem;
+  
+    }
+    .achieve{
+      width: 100%;
+    height: 65%;
+          align-items: center;
+          position: relative;
+    }
+    .main{
+      width  :100vw;
+      height: 100vh;
+      overflow: auto;
+  }
+    ul{
+      list-style-type: none;
+    }
+    li:before{
+          content:"\270C";
+          color: white;
+          padding-right: 0.5rem;
+          justify-content: baseline;
+    }
+    h3{
+      text-align: center;
+      padding: 0.6rem;
+      font-weight: 700;
+      font-size: 2rem;
+    }
+    h4{
+      text-align: center;
+      padding: 0.6rem;
+      font-weight: 500;
+      font-size: 1.4rem;
+    }
+    .acad{
+  width: 50%;
+  position: absolute;
+  left: 0%;
+  float: left;
+    }
+    .extra{
+  width: 50%;
+  right: 0%;
+  position: absolute;
+  float: right;
+    }
+    .dterm{
+      padding-bottom: 0.2rem;
+      font-weight: 500;
+      font-size: 1.2rem;
+    }
+    .dlast{
+      padding-bottom: 0.6rem;
+    }
+    ul li{
+      text-align: left;
+    }
   }

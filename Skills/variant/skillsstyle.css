@@ -10,15 +10,13 @@
     background: rgb(1, 1, 31)  no-repeat center fixed;
     background-size: cover;
   }
-  @media screen and (min-width: 300px) and (max-height: 1200px)
-  {
+
   .main {
     display: flex;
     flex-direction: row;
     width  :100vw;
     height: 100vh;
   }
-}
   .sidebar {
     position: fixed;
     left: 0;
